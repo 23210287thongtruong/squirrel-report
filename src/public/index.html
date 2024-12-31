@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Báo Cáo Lương</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Báo Cáo Lương Hàng Tháng</h1>
+            <div class="filters">
+                <label for="salary-cycle">Lọc theo Kỳ Lương:</label>
+                <select id="salary-cycle"></select>
+                <label for="department">Lọc theo Phòng Ban:</label>
+                <select id="department"></select>
+                <label for="employee-search">Tìm Nhân Viên:</label>
+                <input
+                    type="text"
+                    id="employee-search"
+                    placeholder="Tên hoặc Mã Nhân Viên"
+                />
+            </div>
+        </header>
+        <section class="report-table">
+            <table id="salary-report">
+                <thead>
+                    <tr>
+                        <th>Mã Nhân Viên</th>
+                        <th>Họ Tên</th>
+                        <th>Phòng Ban</th>
+                        <th>Lương Cứng</th>
+                        <th>Phụ Cấp</th>
+                        <th>Thưởng</th>
+                        <th>Lương Thực Nhận</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+        <footer>Báo cáo được tạo vào lúc: <span id="timestamp"></span></footer>
+        <script src="script.js"></script>
+    </body>
+</html>
